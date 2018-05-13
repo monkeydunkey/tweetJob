@@ -1,0 +1,4 @@
+tweepy
+google-cloud-datastore==1.6.0
+apache-beam
+apache-beam[gcp]
