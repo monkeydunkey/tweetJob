@@ -1,0 +1,22 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /.*
+  script: main.app
+  login: admin
+
+libraries:
+- name: ssl
+  version: latest
+
+env_variables:
+  CONSUMER_KEY: CONSUMER_KEY
+  CONSUMER_SECRET: CONSUMER_SECRET
+  ACCESS_TOKEN: ACCESS_TOKEN
+  ACCESS_TOKEN_SECRET: ACCESS_TOKEN_SECRET
+  PROJECT: PROJECT
+  DATASET: DATASET
+  BUCKET: BUCKET
+  TEMPLATE_NAME: 'PROJECT-twproc_tmpl'
